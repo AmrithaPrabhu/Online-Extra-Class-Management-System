@@ -1,0 +1,122 @@
+body{
+    background: linear-gradient(-45deg, #df6540, #a657b1, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+p{
+
+    font-family: 'Poppins', sans-serif;
+    padding-top: 20px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border:rgba(0, 0, 0, 0.05)
+}
+.para{
+
+  font-family: 'Poppins', sans-serif;
+  padding-top: 5px;
+  font-size: 10px;
+  color: rgb(231, 21, 21);
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border:rgba(0, 0, 0, 0.05)
+}
+.class{
+    width: 100%;
+    margin-top: 20px;
+    padding-left:470px;
+    flex:content;
+    justify-content: center;
+}
+.class input {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    border-radius: 35px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+input::placeholder {
+    color:black;
+}
+
+  .class input[type="submit"] {
+    color: #666;
+    cursor: pointer;
+    background: #fff;
+    max-width: fit-content;
+    font-weight: 600;
+    margin-bottom: 20px;
+    justify-content: center;
+    margin-left: 45px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  img{
+    width:80px;
+    height:80px;
+  }
+  .header-content{
+    margin: 40px 63px;
+    text-align: center;
+    color:  #EFEEF5;
+  }
+  .header-content h1{
+    font-family: 'Poppins', sans-serif;
+    text-decoration-color: black;
+    color: black;
+    text-shadow: #ffffff;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 1px;
+  }
+  .header-content button{
+    width: 140px;
+    margin:20px 10px;
+    color: #591BC5;
+    font-size: 17px;
+    border:1px solid #EFEEF5;
+    font-weight: 500;
+    background: #EFEEF5;
+    border-radius: 20px;
+    padding: 10px;
+    cursor:pointer;
+    transition: .3s;
+  }
+  .header-content button:hover{
+    border-radius: 0;
+  }
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }

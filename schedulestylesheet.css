@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer
+}
+body{
+  font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #df6540, #a657b1, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+form {
+    border-radius: 15px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width:100%;
+  }
+
+.neww{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(3,1fr);
+  width:100%;
+  padding-left: 210px;
+  gap:15px;
+  padding-bottom: 10px;
+}
+      .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      img{
+        width:80px;
+        height:80px;
+      }
+
+      .custom-select {
+        position: relative;
+        text-align: center;
+        display: grid;
+        }
+      
+      .custom-select select {
+        display: none; /*hide original SELECT element: */
+      }
+      
+      .select-selected {
+        background-color: rgba(255, 255, 255,0.4);
+      }
+      
+      /* Style the arrow inside the select element: */
+      .select-selected:after {
+        position: absolute;
+        content: "";
+        top: 14px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-color: rgb(13, 2, 2) transparent transparent transparent;
+      }
+      .select-selected.select-arrow-active:before {
+        border-color: transparent transparent rgb(15, 1, 1) transparent;
+        top: 7px;
+      }
+      /* Point the arrow upwards when the select box is open (active): */
+      .select-selected.select-arrow-active:after {
+        border-color: transparent transparent rgb(15, 1, 1) transparent;
+        top: 7px;
+      }
+      
+      /* style the items (options), including the selected item: */
+      .select-items div,.select-selected {
+        color: rgb(0,0,0);
+        padding: 8px 16px;
+        border: 1px solid transparent;
+        border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+        cursor: pointer;
+      }
+      
+      /* Style items (options): */
+      .select-items {
+        position: absolute;
+        background-color: rgb(220, 233, 228);
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+      }
+      
+      /* Hide the items when the select box is closed: */
+      .select-hide {
+        display: none;
+      }
+      
+      .select-items div:hover, .same-as-selected {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      .input__box {
+        width: 100%;
+        flex:content;
+        justify-content: center;
+    }
+    .input__box input {
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        padding: 10px 20px;
+        letter-spacing: 1px;
+        border-radius: 35px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 10px;
+    }
+    
+    input::placeholder {
+        color:black;
+    }
+    
+      .input__box input[type="submit"] {
+        color: #666;
+        cursor: pointer;
+        background: #fff;
+        max-width: fit-content;
+        font-weight: 600;
+        justify-content: center;
+        margin-left: 45px;
+    }

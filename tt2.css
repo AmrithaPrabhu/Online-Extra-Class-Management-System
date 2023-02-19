@@ -1,0 +1,64 @@
+body{
+  font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #1da38d,#1bbaa0,rgb(141, 183, 144));
+  }
+  .table1{
+      table-layout: fixed;
+      font-family: 'Poppins', sans-serif;
+      width:90%;
+      border:none;
+      padding: 10px;
+      margin-top: 10%;
+      font-size: large;
+    }
+    .table2{
+      font-family: 'Poppins', sans-serif;
+      border:none;
+      padding: 20px;
+    
+    }
+    tr:nth-child(2n){
+         background: #eff0f1; 
+         color:#17191e;
+         width: 10%;
+         
+      }
+      tr:nth-child(2n+1){
+        background: #c7c9cb; 
+        color:#17191e;
+        width: 10%;
+        
+     }
+      
+      tr:nth-child(2n+2){
+         background: rgb(225, 218, 218); 
+         color:#17191e;
+         width:40px;
+        
+      }
+    .days, .time {
+         padding: 15px; 
+         width: 10%;
+        background: #10184a;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        text-align: center;
+        color:#EFEEF5;
+      }
+      
+      .time {
+         width: 3em!important; 
+      }
+      .t2,.t1{
+          padding: 15px; 
+         width: 10%;
+        text-align:center;
+      }
+      .t2:hover,.t1:hover,.t3:hover{
+        background-color: rgb(193, 188, 188);
+      }
+      .t3{
+          width:5px;
+          padding:5px;
+          text-align: center;
+      }
